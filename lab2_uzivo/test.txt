@@ -1,0 +1,26 @@
+
+From nobody Sat Apr  1 11:16:38 2017
+Return-Path: <spencerdawkins.ietf@gmail.com>
+X-Original-To: ietf@ietfa.amsl.com
+Delivered-To: ietf@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0A96B12964B for <ietf@ietfa.amsl.com>; Sat,  1 Apr 2017 11:16:37 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.275
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.275 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, URIBL_GREY=0.424] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id IXeB2Dm-EFPT for <ietf@ietfa.amsl.com>; Sat,  1 Apr 2017 11:16:35 -0700 (PDT)
+Received: from mail-yw0-x235.google.com (mail-yw0-x235.google.com [IPv6:2607:f8b0:4002:c05::235]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6CB6A129512 for <ietf@ietf.org>; Sat,  1 Apr 2017 11:16:35 -0700 (PDT)
+Received: by mail-yw0-x235.google.com with SMTP id i203so50121655ywc.3 for <ietf@ietf.org>; Sat, 01 Apr 2017 11:16:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:in-reply-to:references:from:date:message-id:subject:to;  bh=sVXpAcM6AFtcchlk59pRAW+0TiI66xkdnanzgPT6exk=; b=Bz2iIeqAItZK1mndW1YUI07xV3GxpR4POeO+36tr6RBInCCMFhqTrK0QJB0KC9zvFd 59wuLd730YNycdPzX7GpOmgdAfMzi2zv6WYMYhWJnjtaNbxdgHNgA1Nzk/e/CxWoQBl6 IE4G/wxsj7oxVfm1u2x2Ti54IXYlZeXDzmCtIb2rehkI6uNzLZfoVD87QulGrfnuKE93 eQUC8MiYqiK2g2AIMvoztLnYM67QH8X+lY5fm+Cx0VIdQXnvjiEysbuzkrqS2vqcRu2D sp66aL3gJ1/rTupD4EK45hloDhvEBvI/kfJ77IdtRVSe65ON3pzvEC9xn8WCK3HfYhJh gzOA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:in-reply-to:references:from:date :message-id:subject:to; bh=sVXpAcM6AFtcchlk59pRAW+0TiI66xkdnanzgPT6exk=; b=UxnAmC6gAdrr+QOAVnfxBIQBAXdIAN2OQ7iGJwasP1W2shOfzYY8H0V9iPcVeA+bk0 oGK6Cze6P+zrD/02iU0Ic5h3OGxF09bjcdRroEofrstg1mTRMAVufF+WQ8RgrML83YNN B1SHlrsQ9m5LcFvm0h+gQYISnwSbbxyXzynHYezfvBkHMq3C0DGubZj+csu7jMgQkWh0 c8ByaIkj6LgfH/KTlAIgwkK5tkXNC286iPG6idxVmFtR9rrS+Hl3BXNKbl+orbN+89RL oFlHvJS9i9Y2BrDahX6hfwRvX9dYrf7ymoFSVmmFDxcObtP5gLXKSxjKW5w6OYUwbN2P 2CWw==
+X-Gm-Message-State: AFeK/H1Rz/CoH6LVzgXfHVCwrLp1Bkf3PsW2XsYNdpJLCyz9S+hAkOz8ti63yKv8IALt42gAap8hv7n3jS0MCA==
+X-Received: by 10.129.196.67 with SMTP id s3mr6668503ywj.248.1491070594437; Sat, 01 Apr 2017 11:16:34 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.37.73.129 with HTTP; Sat, 1 Apr 2017 11:16:33 -0700 (PDT)
+Received: by 10.37.73.129 with HTTP; Sat, 1 Apr 2017 11:16:33 -0700 (PDT)
+In-Reply-To: <eb1bb52f-490f-a04d-64cc-a7522cd4835c@gmail.com>
+References: <149096990336.4276.3480662759931758139.idtracker@ietfa.amsl.com> <9fee9874-1306-07a2-a84a-4e09381a5336@cisco.com> <eb1bb52f-490f-a04d-64cc-a7522cd4835c@gmail.com>
+From: Spencer Dawkins at IETF <spencerdawkins.ietf@gmail.com>
+Date: Sat, 1 Apr 2017 13:16:33 -0500
